@@ -13,7 +13,7 @@ terraform {
 
   backend "s3" {
     bucket         = "erply-bucket-to-storestate-for-my-test-task"
-    key            = "terraform/s3_website/deployment.tfstate"
+    key            = "terraform/s3_website/state.tfstate"
     region         = "us-east-1"
     dynamodb_table = "terraform-state-lock"
     encrypt        = true
